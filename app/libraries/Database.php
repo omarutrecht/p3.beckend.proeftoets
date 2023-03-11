@@ -1,6 +1,6 @@
 <?php
 
-class database
+class Database
 {
     private $dbHost = DB_HOST;
     private $dbUser = DB_USER;
@@ -9,14 +9,14 @@ class database
     private $dbHandler;
     private $statement;
 
-
-
     public function __construct()
     {
-        $conn = 'mysql:host=' . $this->dbHost . ';dbname=' . $this->dbName . ";charset=UTF8";
+        // Verbinding met de database maken
+        $conn = 'mysql:host=' . $this->dbHost . ';dbname=' . $this->dbName . ';charset=UTF8'; 
 
         try {
             $this->dbHandler = new PDO($conn, $this->dbUser, $this->dbPass);
+            echo 'Er verbinding met de mysql-server';
         } catch(PDOException $e) {
             echo $e->getMessage();
         }
@@ -37,4 +37,6 @@ class database
         $this->execute();
         return $this->statement->fetchAll(PDO::FETCH_OBJ);
     }
+
+
 }

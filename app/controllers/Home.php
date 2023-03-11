@@ -2,13 +2,13 @@
 
 class Home extends BaseController
 {
-    public function index($id = NULL, $name = NULL)
+    public function index($id=NULL, $name=NULL, $haircolor=NULL)
     {
-
         $data = [
-            'title' => 'Welkom op de homepage',
+            'title' => 'Homepage van de webapp',
             'id'    => $id,
-            'name'  => $name
+            'name'  => $name,
+            'haircolor' => $haircolor
         ];
 
         $this->view('home/index', $data);
