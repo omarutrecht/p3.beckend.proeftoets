@@ -19,8 +19,9 @@
             <th>Salaris</th>
         </thead>
         <tbody>
-
+            <?= $data['rows']; ?>
         </tbody>
    </table>
+   <a href="<?= URLROOT; ?>/home/index">home</a>
 </body>
 </html>

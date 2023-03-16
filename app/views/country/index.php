@@ -20,6 +20,6 @@
     </table>
 
 
-    <a href="<?= URLROOT; ?>/home/index">home</a>
+<a href="<?= URLROOT; ?>/home/index">home</a>
 </body>
 </html>
