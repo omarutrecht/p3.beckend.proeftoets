@@ -7,7 +7,7 @@ class Voetballer extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'best betaalde voetballers ter wereld'
+            'title' => 'de best betaalde voetballers ter wereld!'
         ];
     
     
