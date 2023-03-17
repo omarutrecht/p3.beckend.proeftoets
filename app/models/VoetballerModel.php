@@ -13,7 +13,7 @@ class VoetballerModel
     {
         $sql = "SELECT id
                        ,Naam 
-                       ,CLub
+                       ,Club
                        ,Leeftijd
                        ,Nationaliteit
                        ,Salaris
